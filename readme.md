@@ -4,7 +4,16 @@ This project is an AI-based stock trading agent that fetches stock data, perform
 
 ## Project Structure
 
-ai-stock-agent/ ├── data_fetcher.py ├── feature_engineering.py ├── trade_executor.py ├── report_generator.py ├── notifier.py ├── app.py ├── .env ├── requirements.txt └── README.md
+ai-stock-agent/ 
+├── data_fetcher.py \
+├── feature_engineering.py 
+├── trade_executor.py 
+├── report_generator.py 
+├── notifier.py 
+├── app.py 
+├── .env 
+├── requirements.txt 
+└── README.md
 
 ## Setup
 
