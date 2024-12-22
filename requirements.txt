@@ -1,0 +1,9 @@
+alpaca-trade-api 
+yfinance
+backtrader
+fastapi 
+uvicorn
+streamlit
+scikit-learn
+twilio
+python-dotenv
