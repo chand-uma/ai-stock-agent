@@ -1,8 +1,8 @@
+import requests
 import pandas as pd
 import logging
 import os
 from dotenv import load_dotenv
-from data_fetcher import fetch_data
 from feature_engineering import prepare_features
 from trade_executor import execute_trades
 from report_generator import generate_daily_report
@@ -10,6 +10,17 @@ from notifier import send_sms_report, send_email_report
 
 # Load environment variables from a .env file
 load_dotenv()
+
+def fetch_data(ticker):
+    """
+    Fetch real-time data for a stock ticker using Netlify Function.
+    """
+    url = f"https://your-netlify-site.netlify.app/api/fetch_stock_data?ticker={ticker}"
+    response = requests.get(url)
+    data = response.json()
+    df = pd.DataFrame(data)
+    df['Ticker'] = ticker
+    return df
 
 # Main Function
 def main():

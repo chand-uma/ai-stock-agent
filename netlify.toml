@@ -1,13 +1,7 @@
 [build]
-  publish = "public"
   functions = "netlify/functions"
 
-[functions]
-
-[[functions.scheduled]]
-  schedule = "30 14 * * *"
-  function = "trade"
-
-[[functions.scheduled]]
-  schedule = "15 21 * * *"
-  function = "trade"
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
