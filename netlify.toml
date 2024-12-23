@@ -2,7 +2,7 @@
   functions = "netlify/functions"
 
 [functions]
-  # Specify any external Node.js modules if needed
+netlify-functions  # Specify any external Node.js modules if needed
   external_node_modules = []
 
   # Configuration for the scheduled_fetch_stock_data function at 9:30 AM ET (2:30 PM UTC) on weekdays

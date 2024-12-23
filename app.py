@@ -15,7 +15,7 @@ def fetch_data(ticker):
     """
     Fetch real-time data for a stock ticker using Netlify Function.
     """
-    url = f"https://your-netlify-site.netlify.app/api/fetch_stock_data?ticker={ticker}"
+    url = f"https://ai-stock-agent.netlify.app/.netlify/functions/fetch_stock_data?ticker={ticker}"
     response = requests.get(url)
     data = response.json()
     df = pd.DataFrame(data)
