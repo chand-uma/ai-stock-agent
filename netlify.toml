@@ -1,7 +1,9 @@
 [build]
+  command = "pip install -r requirements.txt"
   functions = "netlify/functions"
 
 [functions]
+  directory = "netlify/functions"
   # Specify any external Node.js modules if needed
   external_node_modules = []
 
