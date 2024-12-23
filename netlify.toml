@@ -7,10 +7,7 @@
 
   # Configuration for the scheduled_fetch_stock_data function
   [functions.scheduled_fetch_stock_data]
-  schedule = "30 14 * * 1-5"  # This is a cron expression for 9:30 AM ET (2:30 PM UTC) on weekdays
-
-  [functions.scheduled_fetch_stock_data]
-  schedule = "0 21 * * 1-5"  # This is a cron expression for 4:00 PM ET (9:00 PM UTC) on weekdays
+  schedule = "30 14 * * 1-5, 0 21 * * 1-5"  # This is a cron expression for 9:30 AM ET (2:30 PM UTC) and 4:00 PM ET (9:00 PM UTC) on weekdays
 
 [[redirects]]
   from = "/api/*"
